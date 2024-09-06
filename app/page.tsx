@@ -21,7 +21,9 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-5 mt-10">
           {data.map((item) => {
             return (
-              <Link href={item.url}>
+              <Link
+                key={item.id}
+                href={item.url}>
                 <div className="border border-slate-300 hover:border-slate-600 px-3 py-4 text-center">
                   <div>{item.name}</div>
                   <div className="text-sm mt-2 text-slate-600">{item.description}</div>

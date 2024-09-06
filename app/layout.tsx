@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { inter, lora, libre } from "@/components/Font";
+import { libre } from "@/components/Font";
 
 export const metadata: Metadata = {
   title: "Webring",
